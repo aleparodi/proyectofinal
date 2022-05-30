@@ -247,7 +247,7 @@ header {
 
 .card img{
     width: 100%;
-    height: 210px;
+    height: 200px;
 }
 .card .contenido{
     padding: 15px;
@@ -283,24 +283,18 @@ header {
     margin-bottom: 25px;
 }
 .formContacto{
-   
-    background-color: #9f9b9b;
-   width: 400px;
-   position: relative;
-   /*top: 50%;
-    left: 50%;*/
-    margin-top: 400px;
-    margin-left: 700px;
-  /*  margin: auto;*/
-    transform: translate(-50%, -50%);
-    box-shadow: 7px 13px 37px rgba(0,0,0,0.8);
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+   background: rgba(0,0,0,0.1) ;
 }
 .cabezal{
 width: 100%;
 display: flex;
 background-color: #2fb4cc;
-/*overflow: hidden;*/
-
 }
 .textoCabezal{
     font-size: 30px;
@@ -322,6 +316,7 @@ background-color: #2fb4cc;
     font-weight: 700;
 }
 .contact input:not([type=submit], [type=reset]), .contact textarea{
+    width: 100%;
     border: none;
     border-bottom: 2px solid #0083B0;
     margin-bottom: 10px;
@@ -330,7 +325,9 @@ background-color: #2fb4cc;
     color:gray ;
 }
 .contact textarea{
-    min-height: 100px;
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
 }
 input[type=submit], input[type=reset]{
     padding:10px;
@@ -338,5 +335,15 @@ input[type=submit], input[type=reset]{
     background-color:#2fb4cc;
     color: white;
     font-size: 20px;
-     
+ }
+
+ input[type=submit]:hover, input[type=reset]:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+ }
+ 
+@media screen and (max-width: 480px){
+   .formContacto{
+        width: 100%;
+    }
 }

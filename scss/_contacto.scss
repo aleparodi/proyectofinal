@@ -1,0 +1,74 @@
+.formContacto {
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom:20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    background-color:rgba(255,255,255,0.8) ;
+  }
+  
+  .cabezal {
+    width: 100%;
+    display: flex;
+    background-color: #77736e; }
+  
+  .textoCabezal {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding: 2.5rem; }
+  
+  .contact {
+    padding: .8rem;
+    overflow: hidden;
+    color:#2fb4cc;
+  
+  }
+  
+  .contact label, .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px; }
+  
+  .contact label {
+    font-weight: 700;
+    }
+  
+  .contact input:not([type=submit]):not([type=reset]), .contact textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #2fb4cc;
+    margin-bottom: 10px;
+    font: size 20px;
+    background-color: #aeb9bd;
+    outline: none;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .contact textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%; }
+  
+  input[type=submit], input[type=reset] {
+    padding: 10px;
+    border: none;
+    background-color: #2fb4cc;
+    color: rgb(0, 0, 0);
+    font-size: 20px ;
+    font-weight: bold;
+  }
+  
+  input[type=submit]:hover, input[type=reset]:hover {
+    box-shadow: 5px 5px 20px hsla(0, 9%, 91%, 0.962);
+    background: rgba(134, 206, 213, 0.8);
+    transform: translateY(-3%); }
+  
+  @media screen and (max-width: 480px) {
+    .formContacto {
+      width: 100%; } }
+  

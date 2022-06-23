@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 .textoAlineado {
@@ -19,18 +20,12 @@
   text-decoration: none;
   text-align: center; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-.fuente {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  color: #535151; }
+.botonNav {
+  text-decoration: none;
+  text-align: center; }
 
 .colorNav {
-  background-image: linear-gradient(to top, #86878b, #5a5e60); }
+  background-image: linear-gradient(to top, #bac4ec, #8bafbe); }
 
 .logo {
   margin-left: 20px; }
@@ -55,52 +50,6 @@
 .botonNav:hover {
   filter: invert(100%); }
 
-body {
-  background-color: #7ec3c5; }
-
-/* SECCION SERVICIOS */
-.contenedor {
-  text-align: center;
-  margin: 50px;
-  padding: 30px;
-  border: double 6px #99A799;
-  border-radius: 4px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  max-width: 90%; }
-
-.imagenEncabezado {
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  max-width: 90%; }
-
-.imagenGaleria {
-  height: 200px;
-  width: 90%;
-  padding: 10px;
-  margin-left: 10px; }
-
-.imagenGaleria:hover {
-  filter: grayscale(100%); }
-
-.imagenContenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  max-width: 90%; }
-
-/* SECCION FOOTER */
 footer {
   background-color: #FEF5ED;
   width: 100%;
@@ -136,19 +85,136 @@ footer h4 {
   max-width: 90%;
   font-size: small; }
 
-/* BOTON DE WHATSAPP */
 .botonWhatsApp img {
   width: 70px;
   position: fixed;
   bottom: 10px;
   right: 10px; }
 
-.empresaNuestra {
+.card {
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  padding: 10px;
+  margin-top: 20px; }
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
+
+.card img {
+  width: 90%;
+  height: 170px; }
+
+.card .contenido {
+  padding: 15px;
+  text-align: center; }
+
+.card .contenido p {
+  line-height: 1.5;
+  color: #535151; }
+
+.card .contenido h3 {
+  font-weight: 400;
+  margin-bottom: 15px; }
+
+.card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease; }
+
+.card .contenido a:hover {
+  background: rgba(17, 16, 16, 0.8);
+  color: #a6a4aa; }
+
+.formContacto {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.cabezal {
+  width: 100%;
+  display: flex;
+  background-color: #77736e; }
+
+.textoCabezal {
+  font-size: 30px;
+  display: block;
   text-align: center;
-  margin: 50px;
-  padding: 30px;
-  border: double 6px #36136b;
-  border-radius: 4px; }
+  padding: 2.5rem; }
+
+.contact {
+  padding: .8rem;
+  overflow: hidden;
+  color: #2fb4cc; }
+
+.contact label, .contact input, .contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px; }
+
+.contact label {
+  font-weight: 700; }
+
+.contact input:not([type=submit]):not([type=reset]), .contact textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #2fb4cc;
+  margin-bottom: 10px;
+  font: size 20px;
+  background-color: #aeb9bd;
+  outline: none;
+  color: black; }
+
+.contact textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%; }
+
+input[type=submit], input[type=reset] {
+  padding: 10px;
+  border: none;
+  background-color: #2fb4cc;
+  color: black;
+  font-size: 20px;
+  font-weight: bold; }
+
+input[type=submit]:hover, input[type=reset]:hover {
+  box-shadow: 5px 5px 20px rgba(234, 230, 230, 0.962);
+  background: rgba(134, 206, 213, 0.8);
+  transform: translateY(-3%); }
+
+@media screen and (max-width: 480px) {
+  .formContacto {
+    width: 100%; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.fuente {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #535151; }
+
+.tamañoImagen {
+  width: 90rem;
+  height: 30rem; }
 
 header {
   grid-area: inicio;
@@ -179,112 +245,71 @@ header {
   .botonWhatsApp img {
     width: 40px; } }
 
+.contenedorH, .contenedorP, .contenedorP {
+  margin-top: 15 px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.contenedorP {
+  font-size: 20px; }
+
+body {
+  background-color: #7ec3c5;
+  background-image: url(../img/descartables.jpg); }
+
+.contenedor {
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+  border: double 6px #99A799;
+  border-radius: 4px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 90%;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.imagenEncabezado {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 90%; }
+
+.imagenGaleria {
+  height: 100px;
+  max-width: 90%;
+  padding: 10px;
+  margin-left: 10px; }
+
+.imagenGaleria:hover {
+  filter: grayscale(100%); }
+
+.imagenContenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 90%;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.empresaNuestra {
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+  border: double 6px #36136b;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8); }
+
 .container {
   width: 100%;
   display: flex;
-  max-width: 1100px; }
-
-.card {
-  border-radius: 6px;
-  overflow: hidden;
-  background-color: transparent;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  cursor: default;
-  transition: all 400ms ease;
-  padding: 10px;
-  margin-top: 20px; }
-
-.card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%); }
-
-.card img {
-  width: 100%;
-  height: 200px; }
-
-.card .contenido {
-  padding: 15px;
-  text-align: center; }
-
-.card .contenido p {
-  line-height: 1.5;
-  color: #535151; }
-
-.card .contenido h3 {
-  font-weight: 400;
-  margin-bottom: 15px; }
-
-.card .contenido a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-  margin-top: 10px;
-  color: #2fb4cc;
-  border-radius: 4px;
-  transition: all 400ms ease; }
-
-.card .contenido a:hover {
-  background: #2fb4cc;
-  color: #fff; }
-
-.formContacto {
-  width: 450px;
-  margin: auto;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  margin-top: 20px;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.1); }
-
-.cabezal {
-  width: 100%;
-  display: flex;
-  background-color: #2fb4cc; }
-
-.textoCabezal {
-  font-size: 30px;
-  display: block;
-  text-align: center;
-  padding: 2.5rem; }
-
-.contact {
-  padding: .8rem;
-  overflow: hidden;
-  color: #0083B0; }
-
-.contact label, .contact input, .contact textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 8px; }
-
-.contact label {
-  font-weight: 700; }
-
-.contact input:not([type=submit]):not([type=reset]), .contact textarea {
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #0083B0;
-  margin-bottom: 10px;
-  font: size 20px;
-  outline: none;
-  color: gray; }
-
-.contact textarea {
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 100%; }
-
-input[type=submit], input[type=reset] {
-  padding: 10px;
-  border: none;
-  background-color: #2fb4cc;
-  color: white;
-  font-size: 20px; }
-
-input[type=submit]:hover, input[type=reset]:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%); }
-
-@media screen and (max-width: 480px) {
-  .formContacto {
-    width: 100%; } }
+  max-width: 1100px;
+  background-color: rgba(255, 255, 255, 0.8); }
